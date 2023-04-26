@@ -1,0 +1,50 @@
+body {
+    background-color: transparent;
+}
+
+/*mobile screen size*/
+@media screen and (max-width: 480px) {
+    .home { 
+        background: url('../assets/home/background-home-mobile.jpg') no-repeat center center fixed;
+    }
+}
+
+/*tablet screen size*/
+@media screen and (min-width: 481px) and (max-width: 900px) {
+    .home {
+        background: url('../assets/home/background-home-tablet.jpg') no-repeat center center fixed; 
+    }
+}
+
+/*desktop screen size*/
+@media screen and (min-width: 901px) {
+    .home {
+        background: url('../assets/home/background-home-desktop.jpg') no-repeat center center fixed; 
+    }
+}
+
+.home { 
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;  
+    height: 100vh;
+}
+
+.home h5 {
+    color: #d0d6f9;
+    font-size: 28px;
+    letter-spacing: 4.75;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.home h1 {
+    font-family: 'Bellefair', serif;
+    font-size: 150px;
+    color: #ffffff;
+}
+
+.home p {
+    color: #d0d6f9;
+    font-weight: 300;
+}
