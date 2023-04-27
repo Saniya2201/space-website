@@ -1,0 +1,143 @@
+body {
+    background-color: transparent;
+}
+
+/*mobile screen size*/
+@media screen and (max-width: 480px) {
+    .home { 
+        background: url('assets/home/background-home-mobile.jpg') no-repeat center center fixed;
+    }
+
+    .center {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home row {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .explore:hover {
+        box-shadow: 0px 0px 0px 50px rgba(255,255,255,0.26);
+    }
+}
+
+/*tablet screen size*/
+@media screen and (min-width: 481px) and (max-width: 900px) {
+    .home {
+        background: url('assets/home/background-home-tablet.jpg') no-repeat center center fixed;
+        overflow: hidden;
+    }
+
+    .center {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home row {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .content {
+        margin: auto;
+    }
+
+    .explore {
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        font-size: 28px;
+        letter-spacing: 0.4vw;
+        margin: auto;
+    }
+
+    .explore:hover {
+        box-shadow: 0px 0px 0px 64px rgba(255,255,255,0.26);
+    }
+}
+
+/*desktop screen size*/
+@media screen and (min-width: 901px) {
+    .home {
+        background: url('assets/home/background-home-desktop.jpg') no-repeat center center fixed; 
+    }
+
+    .content {
+        margin: 18vw 0vw 0vw 7vw;
+    }
+
+    .explore {
+        width: 230px;
+        height: 230px;
+        line-height: 230px;
+        font-size: 28px;
+        letter-spacing: 0.4vw;
+        float: right;
+        margin-top: 24vw;
+    }
+
+    .explore:hover {
+        box-shadow: 0px 0px 0px 84px rgba(255,255,255,0.26);
+    }
+}
+
+
+
+
+.home{ 
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;  
+    height: 100vh;
+}
+
+.home h5 {
+    color: #d0d6f9;
+    font-size: 28px;
+    letter-spacing: 4.75px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.home h1 {
+    font-family: 'Bellefair', serif;
+    font-size: 150px;
+    color: #ffffff;
+}
+
+.home p {
+    color: #d0d6f9;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.content {
+    width: 450px;
+    height: 382px;
+}
+
+.explore {
+    background-color: #ffffff;
+    text-align: center;
+    font-family: 'Bellefair', serif;
+    border-radius: 100%;
+    transition: box-shadow 1s ease-out 100ms;
+}
+
+
+
+
