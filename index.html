@@ -13,23 +13,38 @@
     <title>Frontend Mentor | Space tourism website</title>
   </head>
   <body>
-    <div class="home container-fluid">
+    <div id="home" class="home container-fluid">
       <div class="navigation-bar">
         <img style="float: left" src="assets/shared/logo.svg" alt="">
-          <ul>
+          <ul id="nav-menu" class="disappear">
             <li>
-              <a href="#"><h6><strong>00  </strong>HOME</h6></a>
+              <button autofocus>
+                <a href="#home"><h6><strong>00  </strong>HOME</h6></a>
+              </button>
             </li>
             <li>
-              <a href="#"><h6><strong>01  </strong>DESTINATION</h6></a>
+              <button>
+                <a href="#"><h6><strong>01  </strong>DESTINATION</h6></a>
+              </button>
             </li>
             <li>
-              <a href="#"><h6><strong>02  </strong>CREW</h6></a>
+              <button>
+                <a href="#"><h6><strong>02  </strong>CREW</h6></a>
+              </button>
             </li>
             <li>
-              <a href="#"><h6><strong>03  </strong>TECHNOLOGY</h6></a>
+              <button>
+                <a href="#"><h6><strong>03  </strong>TECHNOLOGY</h6></a>
+              </button>
             </li>
           </ul>
+          <button id="hamburger" class="btn btn-primary">
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </button>
       </div>
       <div class="center">
         <div class="row">
@@ -50,5 +65,7 @@
         </div>
       </div>
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>
