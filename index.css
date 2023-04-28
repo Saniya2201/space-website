@@ -36,12 +36,13 @@ body {
 }
 
 .navigation-bar li {
+    --ul-left-padding: 2rem;
     float: right;
     display: flex;
     align-items: center;
     color: white;
     border-bottom: 2px solid transparent;
-    transition: border-bottom-color 200ms;
+    transition: border-bottom-color 400ms;
     padding: 0 2rem;
 }
 
@@ -72,9 +73,28 @@ body {
         transform: translate(-50%, -50%);
     }
 
+    .explore {
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+        font-size: 24px;
+        letter-spacing: 0.2vw;
+        margin: auto;
+    }
+
     .explore:hover {
         box-shadow: 0px 0px 0px 50px rgba(255,255,255,0.26);
     }
+
+    .home h5 {
+        font-size: 22px;
+        letter-spacing: 4.25px;
+    }
+    
+    .home h1 {
+        font-size: 130px;
+    }
+
 }
 
 /*tablet screen size*/
@@ -116,6 +136,15 @@ body {
     .explore:hover {
         box-shadow: 0px 0px 0px 64px rgba(255,255,255,0.26);
     }
+
+    .home h5 {
+        font-size: 28px;
+        letter-spacing: 4.75px;
+    }
+    
+    .home h1 {
+        font-size: 150px;
+    }
 }
 
 /*desktop screen size*/
@@ -141,6 +170,19 @@ body {
     .explore:hover {
         box-shadow: 0px 0px 0px 84px rgba(255,255,255,0.26);
     }
+
+    .navigation-bar ul {
+        margin-top: 1rem;
+    }
+
+    .home h5 {
+        font-size: 28px;
+        letter-spacing: 4.75px;
+    }
+    
+    .home h1 {
+        font-size: 150px;
+    }
 }
 
 
@@ -160,14 +202,11 @@ body {
 
 .home h5 {
     color: #d0d6f9;
-    font-size: 28px;
-    letter-spacing: 4.75px;
     font-family: 'Barlow Condensed', sans-serif;
 }
 
 .home h1 {
     font-family: 'Bellefair', serif;
-    font-size: 150px;
     color: #ffffff;
 }
 
