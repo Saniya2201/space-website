@@ -2,6 +2,54 @@ body {
     background-color: transparent;
 }
 
+.navigation-bar {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+    align-items: center;
+}
+
+.navigation-bar li {
+    list-style-type: none;
+}
+
+.navigation-bar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navigation-bar img {
+    height: 40px;
+    width: 40px;
+}
+
+.navigation-bar ul {
+    display: flex;
+    gap: 0.5rem;
+    margin: 0;
+    height: 70px;
+    background-color: rgba(255,255,255,0.18);
+    backdrop-filter: blur(5px);
+    padding: 0 2rem;
+}
+
+.navigation-bar li {
+    float: right;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 200ms;
+    padding: 0 2rem;
+}
+
+.navigation-bar li:hover {
+    border-bottom-color: white;
+}
+
+
 /*mobile screen size*/
 @media screen and (max-width: 480px) {
     .home { 
@@ -104,6 +152,10 @@ body {
     -o-background-size: cover;
     -moz-background-size: cover;  
     height: 100vh;
+    position: absolute;
+    z-index: -1;
+    padding-right: 0;
+    overflow: hidden;
 }
 
 .home h5 {
