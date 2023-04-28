@@ -10,6 +10,7 @@ body {
     justify-content: space-between;
     z-index: 1;
     align-items: center;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 
 .navigation-bar a {
@@ -30,6 +31,10 @@ body {
     padding: 0 2rem;
     position: absolute;
     right: 0;
+}
+
+.navigation-bar h6 {
+    letter-spacing: 1.75px;
 }
 
 .navigation-bar button {
