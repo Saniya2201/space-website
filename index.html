@@ -4,68 +4,202 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;400&family=Bellefair&display=swap" rel="stylesheet">
+    <!--Favicon-->
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Stylesheets-->
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="destination.css">
     <title>Frontend Mentor | Space tourism website</title>
   </head>
   <body>
-    <div id="home" class="home container-fluid">
-      <div class="navigation-bar">
-        <img style="float: left" src="assets/shared/logo.svg" alt="">
-          <ul id="nav-menu" class="disappear">
-            <li>
-              <button autofocus>
-                <a href="#home"><h6><strong>00  </strong> HOME</h6></a>
-              </button>
-            </li>
-            <li>
-              <button>
-                <a href="#"><h6><strong>01  </strong> DESTINATION</h6></a>
-              </button>
-            </li>
-            <li>
-              <button>
-                <a href="#"><h6><strong>02  </strong> CREW</h6></a>
-              </button>
-            </li>
-            <li>
-              <button>
-                <a href="#"><h6><strong>03  </strong> TECHNOLOGY</h6></a>
-              </button>
-            </li>
-          </ul>
-          <button id="hamburger" class="btn btn-primary">
-            <div class="hamburger">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
+    <!--Homepage-->
+    <section id="home">
+      <div class="home container-fluid">
+        <div class="navigation-bar">
+          <img style="float: left" src="assets/shared/logo.svg" alt="">
+            <ul id="nav-menu" class="disappear">
+              <li>
+                <button autofocus>
+                  <a href="#home"><h6><strong>00  </strong> HOME</h6></a>
+                </button>
+              </li>
+              <li>
+                <button>
+                  <a href="#destination"><h6><strong>01  </strong> DESTINATION</h6></a>
+                </button>
+              </li>
+              <li>
+                <button>
+                  <a href="#crew"><h6><strong>02  </strong> CREW</h6></a>
+                </button>
+              </li>
+              <li>
+                <button>
+                  <a href="#technology"><h6><strong>03  </strong> TECHNOLOGY</h6></a>
+                </button>
+              </li>
+            </ul>
+            <button id="hamburger" class="btn btn-primary">
+              <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </button>
+        </div>
+        <div class="center">
+          <div class="row">
+            <div class="content col-lg-6 col-md-12 col-sm-12">
+              <h5>SO, YOU WANT TO TRAVEL TO</h5>
+              <h1>SPACE</h1>
+              <p>
+                Let’s face it; if you want to go to space, you might as well genuinely go to 
+                outer space and not hover kind of on the edge of it. Well sit back, and relax 
+                because we’ll give you a truly out of this world experience!
+              </p>
             </div>
-          </button>
-      </div>
-      <div class="center">
-        <div class="row">
-          <div class="content col-lg-6 col-md-12 col-sm-12">
-            <h5>SO, YOU WANT TO TRAVEL TO</h5>
-            <h1>SPACE</h1>
-            <p>
-              Let’s face it; if you want to go to space, you might as well genuinely go to 
-              outer space and not hover kind of on the edge of it. Well sit back, and relax 
-              because we’ll give you a truly out of this world experience!
-            </p>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="explore">
+                EXPLORE
+              </div>
+            </div>      
           </div>
-          <div class="col-lg-6 col-md-12 col-sm-12">
-            <div class="explore">
-              EXPLORE
-            </div>
-          </div>      
         </div>
       </div>
-    </div>
+    </section>
 
+    <!--Destination-->
+    <section id="destination">
+      <div id="carouselExampleControls" class="carousel slide" data-interval="false">
+        <div class="carousel-inner">
+          <div id="moon" class=" carousel-item active">
+            <h5><strong>01 </strong>PICK YOUR DESTINATION</h5>
+            <div class="center">
+              <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <img class="img-fluid" src="assets/destination/image-moon.png" alt="">
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <div class="planet-nav">
+                      <ul id="planet-nav-menu">
+                        <li>
+                          <button style="border-bottom: 2px solid white;">
+                            <a href="#moon"><h6>MOON</h6></a>
+                          </button>
+                        </li>
+                        <li>
+                          <button>
+                            <a href="#mars"><h6>MARS</h6></a>
+                          </button>
+                        </li>
+                        <li>
+                          <button>
+                            <a href="#europa"><h6>EUROPA</h6></a>
+                          </button>
+                        </li>
+                        <li>
+                          <button>
+                            <a href="#titan"><h6>TITAN</h6></a>
+                          </button>
+                        </li>
+                      </ul>
+                  </div>
+                  <div class="planet-data">
+                    <h1>MOON</h1>
+                    <p>
+                      See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+                    </p>
+                    <div class="spacer"></div>
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-12">
+                        <h6>AVG. DISTANCE</h6>
+                        <h3>384,000 KM</h3>
+                     </div>
+                     <div class="col-lg-6 col-mg-6 col-sm-12">
+                       <h6>EST. TRAVEL TIME</h6>
+                       <h3>3 DAYS</h3>
+                     </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="moon" class=" carousel-item active">
+            <h5><strong>01 </strong>PICK YOUR DESTINATION</h5>
+            <div class="center">
+              <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <img class="img-fluid" src="assets/destination/image-moon.png" alt="">
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <div class="planet-nav">
+                      <ul id="planet-nav-menu">
+                        <li>
+                          <button style="border-bottom: 2px solid white;">
+                            <a href="#moon"><h6>MOON</h6></a>
+                          </button>
+                        </li>
+                        <li>
+                          <button>
+                            <a href="#mars"><h6>MARS</h6></a>
+                          </button>
+                        </li>
+                        <li>
+                          <button>
+                            <a href="#europa"><h6>EUROPA</h6></a>
+                          </button>
+                        </li>
+                        <li>
+                          <button>
+                            <a href="#titan"><h6>TITAN</h6></a>
+                          </button>
+                        </li>
+                      </ul>
+                  </div>
+                  <div class="planet-data">
+                    <h1>MOON</h1>
+                    <p>
+                      See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+                    </p>
+                    <div class="spacer"></div>
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-12">
+                        <h6>AVG. DISTANCE</h6>
+                        <h3>384,000 KM</h3>
+                     </div>
+                     <div class="col-lg-6 col-mg-6 col-sm-12">
+                       <h6>EST. TRAVEL TIME</h6>
+                       <h3>3 DAYS</h3>
+                     </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!--Script file-->
     <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -2,14 +2,16 @@ body {
     background-color: transparent;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
 /**************************************************************************************************************************************/
+
+/**************************************************************************************************************************************/
+/*NAVIGATION BAR*/
 .navigation-bar {
-    position: sticky;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    z-index: 1;
-    align-items: center;
+    position: fixed;
+    z-index: 5;
     font-family: 'Barlow Condensed', sans-serif;
 }
 
@@ -24,16 +26,19 @@ body {
 }
 
 .navigation-bar ul {
+    position: fixed;
     gap: 0.5rem;
     margin: 0;
     background-color: rgba(255,255,255,0.18);
     backdrop-filter: blur(5px);
     padding: 0 2rem;
-    position: absolute;
     right: 0;
+    top: 1rem;
 }
 
 .navigation-bar h6 {
+    font-size: 1.2rem;
+    font-weight: 300; 
     letter-spacing: 1.75px;
 }
 
@@ -41,8 +46,14 @@ body {
     color: white;
     background-color: transparent;
     height: 100%;
-    padding: 0 3rem;
+    padding: 0 3vw;
     border: none;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 400ms;
+}
+
+.navigation-bar button:hover {
+    border-bottom: 3px solid rgba(255,255,255,0.46);
 }
 
 .navigation-bar button:focus {
@@ -58,12 +69,6 @@ body {
     float: right;
     display: flex;
     align-items: center;
-    border-bottom: 3px solid transparent;
-    transition: border-bottom-color 400ms;
-}
-
-.navigation-bar li:hover {
-    border-bottom-color: rgba(255,255,255,0.46);
 }
 
 .hamburger {
@@ -83,12 +88,58 @@ body {
 /**************************************************************************************************************************************/
 
 /**************************************************************************************************************************************/
+/*HOMEPAGE*/
+.home::-webkit-scrollbar {
+    display: none;
+}
+
+.home{ 
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;  
+    height: 100vh;
+    padding-right: 0;
+    overflow: hidden;
+}
+
+.home h5 {
+    color: #d0d6f9;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.home h1 {
+    font-family: 'Bellefair', serif;
+    color: #d0d6f9;
+}
+
+.home p {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #d0d6f9;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.content {
+    width: 450px;
+    height: 382px;
+}
+
+.explore {
+    background-color: #ffffff;
+    text-align: center;
+    font-family: 'Bellefair', serif;
+    border-radius: 100%;
+    transition: box-shadow 1s ease-out 100ms;
+}
+/**************************************************************************************************************************************/
+
+/**************************************************************************************************************************************/
+/*MEDIA QUERY*/
 /*mobile screen size*/
 @media screen and (max-width: 480px) {
-    .home { 
-        background: url('assets/home/background-home-mobile.jpg') no-repeat center center fixed;
-    }
-
     .center {
         height: 100%;
         width: 100%;
@@ -98,11 +149,27 @@ body {
         align-items: center;
     }
 
+    .home { 
+        background: url('assets/home/background-home-mobile.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+
     .home row {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    .home h5 {
+        font-size: 22px;
+        letter-spacing: 4.25px;
+    }
+    
+    .home h1 {
+        font-size: 130px;
     }
 
     .explore {
@@ -118,15 +185,6 @@ body {
         box-shadow: 0px 0px 0px 50px rgba(255,255,255,0.26);
     }
 
-    .home h5 {
-        font-size: 22px;
-        letter-spacing: 4.25px;
-    }
-    
-    .home h1 {
-        font-size: 130px;
-    }
-
     .navigation-bar ul {
         padding-top: 90px;
         align-items: left;
@@ -137,7 +195,18 @@ body {
         text-align: right;
     }
 
+    .navigation-bar button:hover {
+        background-color: transparent;
+    }
+
+    .navigation-bar button:focus {
+        border-bottom: none
+    }
+
     .hamburger {
+        position: fixed;
+        top: 0;
+        right: 0;
         padding-right: 1rem;
         display: block;
         z-index: 1;
@@ -180,11 +249,6 @@ body {
 
 /*tablet screen size*/
 @media screen and (min-width: 481px) and (max-width: 900px) {
-    .home {
-        background: url('assets/home/background-home-tablet.jpg') no-repeat center center fixed;
-        overflow: hidden;
-    }
-
     .center {
         height: 100%;
         width: 100%;
@@ -194,11 +258,28 @@ body {
         align-items: center;
     }
 
+    .home {
+        background: url('assets/home/background-home-tablet.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        overflow-x: hidden;
+    }
+
     .home row {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    .home h5 {
+        font-size: 28px;
+        letter-spacing: 4.75px;
+    }
+    
+    .home h1 {
+        font-size: 150px;
     }
 
     .content {
@@ -218,15 +299,6 @@ body {
         box-shadow: 0px 0px 0px 64px rgba(255,255,255,0.26);
     }
 
-    .home h5 {
-        font-size: 28px;
-        letter-spacing: 4.75px;
-    }
-    
-    .home h1 {
-        font-size: 150px;
-    }
-
     .navigation-bar {
         margin-top: 0.9rem;
     }
@@ -242,7 +314,19 @@ body {
 /*desktop screen size*/
 @media screen and (min-width: 901px) {
     .home {
-        background: url('assets/home/background-home-desktop.jpg') no-repeat center center fixed; 
+        background-image: url('assets/home/background-home-desktop.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+
+    .home h5 {
+        font-size: 28px;
+        letter-spacing: 4.75px;
+    }
+    
+    .home h1 {
+        font-size: 150px;
     }
 
     .content {
@@ -268,63 +352,9 @@ body {
     }
 
     .navigation-bar ul {
-        margin-top: 1rem;
         height: 70px;
         display: flex;
     }
-
-    .home h5 {
-        font-size: 28px;
-        letter-spacing: 4.75px;
-    }
-    
-    .home h1 {
-        font-size: 150px;
-    }
 }
 /**************************************************************************************************************************************/
 
-/**************************************************************************************************************************************/
-.home{ 
-    background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;  
-    height: 100vh;
-    position: absolute;
-    z-index: -1;
-    padding-right: 0;
-    overflow: hidden;
-}
-
-.home h5 {
-    color: #d0d6f9;
-    font-family: 'Barlow Condensed', sans-serif;
-}
-
-.home h1 {
-    font-family: 'Bellefair', serif;
-    color: #ffffff;
-}
-
-.home p {
-    color: #d0d6f9;
-    font-weight: 300;
-    letter-spacing: 0.5px;
-}
-
-.content {
-    width: 450px;
-    height: 382px;
-}
-
-.explore {
-    background-color: #ffffff;
-    text-align: center;
-    font-family: 'Bellefair', serif;
-    border-radius: 100%;
-    transition: box-shadow 1s ease-out 100ms;
-}
-/**************************************************************************************************************************************/
-
-/**************************************************************************************************************************************/

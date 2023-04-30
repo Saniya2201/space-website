@@ -1,0 +1,179 @@
+/*destination*/
+#destination-carousel {
+    position: absolute;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .carousel-item strong {
+    color: rgba(208, 214, 249, 0.5);
+  }
+
+  .carousel-item h5 {
+    color: #d0d6f9;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.planet-nav {
+    font-family: 'Barlow Condensed', sans-serif;
+    padding-top: 15px;
+}
+
+.planet-nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.planet-nav ul {
+    gap: 0.5rem;
+    margin: 0;
+    display: flex;
+    padding: 0;
+}
+
+.planet-nav li {
+    list-style-type: none;
+    padding-right: 2rem;
+}
+
+.planet-nav h6 {
+    font-size: 1.2rem;
+    font-weight: 100 !important;
+    letter-spacing: 1.75px;
+}
+
+.planet-nav button {
+    color: rgba(208, 214, 249, 0.8);
+    background-color: transparent;
+    font-weight: 100;
+    border-bottom: 2px solid transparent; 
+    transition: border-bottom 400ms;
+    border: none;
+}
+
+.planet-nav button:hover {
+    background-color: transparent;
+    outline: none;
+    box-shadow: none;
+    border-bottom: 2px solid rgba(208, 214, 249, 0.5);
+}
+
+.planet-nav button:active {
+    border-bottom: 2px solid white;
+}
+
+.planet-data h1 {
+    font-family: 'Bellefair', serif;
+    color: #d0d6f9;
+}
+
+.planet-data p {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #d0d6f9;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.planet-data h6 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2.5px;
+    color: #d0d6f9;
+    font-weight: lighter;
+}
+
+.planet-data h3 {
+    font-family: 'Bellefair', serif;
+    color: #d0d6f9;
+}
+
+.spacer {
+    background-color: rgba(208, 214, 249, 0.4);
+    height: 1px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+/**************************************************************************************************************************************/
+
+/**************************************************************************************************************************************/
+/*MEDIA QUERY*/
+/*mobile screen size*/
+@media screen and (max-width: 480px) {
+    .carousel-item {
+        background-image: url('assets/destination/background-destination-mobile.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+
+    .carousel-item h5 {
+        font-size: 22px;
+        letter-spacing: 4.25px;
+    }
+}
+
+/**************************************************************************************************************************************/
+
+/*tablet screen size*/
+@media screen and (min-width: 481px) and (max-width: 900px) {
+    .carousel-item {
+        background-image: url('assets/destination/background-destination-tablet.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+
+    .carousel-item h5 {
+        font-size: 28px;
+        letter-spacing: 4.75px;
+    }
+}
+
+/**************************************************************************************************************************************/
+
+/*desktop screen size*/
+@media screen and (min-width: 901px) {
+    .carousel-item {
+        background-image: url('assets/destination/background-destination-desktop.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+
+    .carousel-item h5 {
+        font-size: 28px;
+        letter-spacing: 4.75px;
+        padding: 20vh 0 0 10vh;
+    }
+
+    .carousel-item img {
+        display: block;
+        margin: 4vw auto;
+        width: 400px;
+        height: auto;
+    }
+
+    .planet-data {
+        padding-top: 4vw;
+        padding-right: 10vw;
+    }
+
+    .planet-data h1 {
+        font-size: 5.5vw;
+    }
+
+    .planet-data p {
+        margin-bottom: 40px;
+    }
+}
